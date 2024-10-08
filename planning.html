@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App Vanilla JS</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+    <div class="wlc">
+      <nav>
+          <div class="navigation">
+          <img class="logo" src="logo.png" href="#">
+          <a class="center center1" href="index.html">HOME</a>
+          <a class="center" href="#Services">ABOUT US</a>
+          <a class="center" href="#Contact">TEAMS</a>
+          <a class="center" href="planning.html">PROGRAM</a>
+          <ul>
+              <li><a href="#"class="btn1">LOGIN</a></li>
+              <li><a href="#" class="btn">SIGN UP</a></li>
+          </ul>
+          </div>
+      </nav>
+      </div>
+    </section>
+    <section>
+    <div id="container">
+      <div id="header">
+        <button id="backButton"><</button>
+        <div id="monthDisplay"></div>
+        <button id="nextButton">></button>
+        <div id="otherbtn">
+          <button id="back"> < </button>
+          <button id="next"> > </button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+      </div>
+
+      <div class="container2"><div id="calendar"></div></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>New Class</h2>
+
+      <input id="eventTitleInput" placeholder="Sport activity" />
+        <label for="time1">Duration: &nbsp;</label>
+        <input id="time1" Type="time"  value="08:00"/>
+        <label for="time2">To</label> &nbsp; </label>
+        <input id="time2" Type="time" value="09:00" />
+    </br>    </br>
+        <label for="salle">Choose the place&nbsp;</label>
+        <select id="salle" >
+          <option value=">Hall A">Hall A</option>
+          <option value=">Hall B">Hall B</option>
+          <option value=">Hall C">Hall C</option>
+          <option value="Field 1">Field 1</option>
+          <option value="Field 2">Field 2</option>
+        </select>
+      </br>    </br>
+              <label for="coach">Select the coach &nbsp;</label>
+      <select id="coach">
+        <option value="Alexa Turner">Alexa Turner</option>
+        <option value="Monica Geller">Monica Geller</option>
+        <option value="Maddie Robinson">Maddie Robinson</option>
+        <option value="Phil Jackson">Phil Jackson</option>
+        <option value="Taylor Smith">Taylor Smith</option>
+        <option value="Paul Brown">Paul Brown</option>
+        <option value="Morgan Wootten">Morgan Wootten</option>
+        <option value="John Madden">John Madden</option>
+      </select>
+    </br>    </br>
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+
+    </div>
+
+    <div id="deleteEventModal">
+      <p id="eventText"></p>
+      <p id="Time"></p>
+      <p id="Place"></p>
+      <p id="Coach"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+    <div id="modalBackDrop"></div>
+</section>
+    <script src="./script.js"></script>
+  </body>
+</html>
